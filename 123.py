@@ -1,13 +1,13 @@
 class Vehicle:
     vehicle_type = "none"
 
-class Car(Vehicle):
+class Car:
     price = 1000000
 
     def horse_powers(self):
         return 200
 
-class Nissan(Car):
+class Nissan(Car, Vehicle):
     def __init__(self):
         self.vehicle_type = "SUV"
         self.price = 50000
